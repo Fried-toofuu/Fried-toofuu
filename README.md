@@ -1,4 +1,4 @@
-# 💫 About Me: Hi, My name is Khánh
+# 💫 About Me: Hi, My name is Khanh
 I am currently studying at PTIT Hanoi.
 
 ## 🌐 Socials:
