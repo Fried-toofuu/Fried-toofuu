@@ -1,7 +1,7 @@
 # 💫 About Me: Hi, My name is Khanh
 I am currently studying at PTIT Hanoi.
 
-## 🌐 Socials:
+# 🌐 Socials:
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/https://www.linkedin.com/in/nguy%E1%BB%85n-ho%C3%A0ng-kh%C3%A1nh-undefined-b1a942389/) [![email](https://img.shields.io/badge/Email-D14836?logo=gmail&logoColor=white)](mailto:nghoangkhanh67@gmail.com) 
 
 # 💻 Tech Stack:
