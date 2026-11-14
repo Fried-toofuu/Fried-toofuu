@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="220" viewBox="0 0 1200 220" role="img" aria-labelledby="title desc"><title id="title">Tofu resting. Session complete. See you in the next commit.</title><desc id="desc">Tofu resting. Session complete. See you in the next commit.. Original Tofu pixel artwork.</desc><style>text{font-family:"Courier New",monospace}
+.blink { transform-box:fill-box; transform-origin:center; animation:blink 7s infinite; }
+.typing { animation:typing 1.6s steps(2,end) infinite; }
+.cursor { animation:cursor 1.2s steps(1,end) infinite; }
+.screen { animation:screen 6s ease-in-out infinite; }
+.lamp-glow { animation:glow 5s ease-in-out infinite; }
+.star { animation:twinkle 5s ease-in-out infinite; }
+.star.slow { animation-duration:7s; animation-delay:-3s; }
+.bob { animation:bob 4s ease-in-out infinite; }
+.leaf { transform-box:fill-box; transform-origin:bottom; animation:sway 6s ease-in-out infinite; }
+@keyframes blink { 0%,43%,47%,100% { transform:scaleY(1); } 45% { transform:scaleY(.12); } }
+@keyframes typing { 0%,100% { transform:translateY(0); } 50% { transform:translateY(-2px); } }
+@keyframes cursor { 0%,49% { opacity:1; } 50%,100% { opacity:0; } }
+@keyframes screen { 0%,100% { opacity:1; } 50% { opacity:.85; } }
+@keyframes glow { 0%,100% { opacity:.10; } 50% { opacity:.17; } }
+@keyframes twinkle { 0%,100% { opacity:.45; } 50% { opacity:1; } }
+@keyframes bob { 0%,100% { transform:translateY(0); } 50% { transform:translateY(-3px); } }
+@keyframes sway { 0%,100% { transform:rotate(-2deg); } 50% { transform:rotate(2deg); } }
+@media (prefers-reduced-motion:reduce) { * { animation:none !important; } }
+</style><path d="M12 0H1188v6h6v6h6v196h-6v6h-6v6H12v-6H6v-6H0V12h6V6h6z" fill="#fff6e6"/><path d="M16 8H1184M8 16V204M16 212H1184M1192 16V204" fill="none" stroke="#cbb697" stroke-width="2"/><rect x="16" y="16" width="5" height="5" fill="#a66336"/><rect x="1179" y="199" width="5" height="5" fill="#a66336"/><g transform="translate(104 42) scale(1.3)" class=""><g transform="translate(0 0) scale(1)" class="bob"><g shape-rendering="crispEdges"><path xmlns="http://www.w3.org/2000/svg" d="M28 20h40v4h8v8h4v28h-4v8H20v-8h-4V32h4v-8h8z" fill="#d89855" />
+    <path xmlns="http://www.w3.org/2000/svg" d="M28 24h40v4h4v8h4v20h-4v8H24v-8h-4V36h4v-8h4z" fill="#fff0d5" />
+    <path xmlns="http://www.w3.org/2000/svg" d="M28 28h36v4H28zM24 36h4v12h-4z" fill="#fff9ec" />
+    <g class="blink"><path d="M32 40h4v6h-4zM60 40h4v6h-4z" fill="#392d2a"/></g><path d="M42 50h12v4H42z" fill="#392d2a"/><path xmlns="http://www.w3.org/2000/svg" d="M26 50h8v4h-8zM62 50h8v4h-8z" fill="#eda47d" />
+    <path xmlns="http://www.w3.org/2000/svg" d="M30 68h8v6h-8zM58 68h8v6h-8z" fill="#d89855" />
+  </g></g></g><rect x="260" y="66" width="12" height="64" fill="#a66336"/><rect x="244" y="130" width="44" height="4" fill="#a66336"/><path d="M240 42h44v8h8v16h-60V50h8z" fill="#f2c078"/><text x="356" y="92" font-size="26" fill="#66594e" font-weight="normal">&gt; session complete</text><text x="356" y="140" font-size="27" fill="#392d2a" font-weight="normal">&gt; see you in the next commit</text><rect x="810" y="146" width="16" height="4" fill="#85501f" class="cursor"/><rect x="1054" y="72" width="6" height="18" fill="#a66336" class="star"/><rect x="1048" y="78" width="18" height="6" fill="#a66336"/></svg>

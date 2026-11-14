@@ -1,0 +1,46 @@
+name: Sync room with Hanoi time
+
+on:
+  schedule:
+    # 06:00 and 18:00 in Hanoi (UTC+7). Scheduled runs may start late.
+    - cron: '0 11,23 * * *'
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - .github/workflows/room-time.yml
+      - scripts/update-room-time.py
+      - scripts/build-pixel-world.py
+
+permissions:
+  contents: read
+
+concurrency:
+  group: room-time
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    permissions:
+      contents: write
+    steps:
+      - name: Check out profile
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+
+      - name: Select current Hanoi scene
+        run: python3 scripts/update-room-time.py
+
+      - name: Publish scene selection when it changes
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -- README.md
+          if git diff --cached --quiet; then
+            echo 'The room already matches Hanoi time.'
+            exit 0
+          fi
+          git commit -m "docs(profile): sync room with Hanoi time"
+          git pull --rebase origin main
+          git push origin HEAD:main

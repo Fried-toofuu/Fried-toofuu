@@ -34,11 +34,14 @@ jobs:
             assets/contribution-snake.svg?color_snake=%23D89855&color_dots=%23F1EDE5,%23F5DDAD,%23F2C078,%23D89855,%23A66336
             assets/contribution-snake-dark.svg?palette=github-dark&color_snake=%23FFF0D5&color_dots=%23252C36,%23534438,%23876145,%23BF8956,%23F2C078
 
+      - name: Generate reduced-motion snapshots
+        run: python3 scripts/build-pixel-world.py --snake-stills-only
+
       - name: Publish updated images
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add -- assets/contribution-snake.svg assets/contribution-snake-dark.svg
+          git add -- assets/contribution-snake.svg assets/contribution-snake-dark.svg assets/contribution-snake-still-light.svg assets/contribution-snake-still-dark.svg
           if git diff --cached --quiet; then
             echo 'Contribution snakes are already up to date.'
             exit 0
