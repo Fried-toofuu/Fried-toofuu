@@ -20,12 +20,13 @@ def hero_markup(period):
     if period not in ('day', 'night'):
         raise ValueError('Expected day or night')
     theme = 'light' if period == 'day' else 'dark'
+    stem = 'hero-animated' if period == 'day' else 'hero-animated-moon'
     return f'''<p align="center">
   <picture>
-    <source media="(prefers-reduced-motion: reduce) and (max-width: 600px)" srcset="assets/hero-animated-still-mobile-{theme}.svg" />
-    <source media="(prefers-reduced-motion: reduce)" srcset="assets/hero-animated-still-{theme}.svg" />
-    <source media="(max-width: 600px)" srcset="assets/hero-animated-mobile-{theme}.svg" />
-    <img src="assets/hero-animated-{theme}.svg" alt="Tofu's coding corner. Hi, I'm Khanh. Developer in progress at PTIT Hanoi. {period.capitalize()} scene selected by Hanoi time." width="100%" />
+    <source media="(prefers-reduced-motion: reduce) and (max-width: 600px)" srcset="assets/{stem}-still-mobile-{theme}.svg" />
+    <source media="(prefers-reduced-motion: reduce)" srcset="assets/{stem}-still-{theme}.svg" />
+    <source media="(max-width: 600px)" srcset="assets/{stem}-mobile-{theme}.svg" />
+    <img src="assets/{stem}-{theme}.svg" alt="Tofu's coding corner. Hi, I'm Khanh. Developer in progress at PTIT Hanoi. {period.capitalize()} scene selected by Hanoi time." width="100%" />
   </picture>
 </p>'''
 

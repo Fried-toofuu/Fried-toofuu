@@ -112,7 +112,8 @@ def room(p, light=False):
         out += rect(362, 80, 36, 8, '#fff6e6') + rect(374, 72, 16, 8, '#fff6e6')
         out += '<path d="M350 168h160L380 272H220z" fill="#f2c078" opacity=".07"/>'
     else:
-        out += '<path d="M472 52h20v8h-8v20h-20V60h8z" fill="#fff0d5"/>'
+        # Mirrored rows make both crescent tips meet the same 4px grid.
+        out += '<path d="M472 52h12v4h-8v4h-4v12h4v4h8v4h-12v-4h-4v-4h-4V60h4v-4h4z" fill="#fff0d5"/>'
         for i, (x, y) in enumerate([(370, 62), (414, 86), (494, 128), (382, 138), (438, 52)]):
             out += f'<g class="star {"slow" if i%2 else ""}">'+rect(x, y, 4, 12, '#fff0d5')+rect(x-4, y+4, 12, 4, '#fff0d5')+'</g>'
     out += rect(426, 40, 4, 128, p['line']) + rect(350, 102, 160, 4, p['line']) + rect(334, 172, 192, 8, p['wood'])
@@ -312,8 +313,9 @@ def build():
         for mobile in [False, True]:
             suffix = ('mobile-' if mobile else '')+theme+'.svg'
             hero_svg = hero(p, light, mobile)
-            write('hero-animated-'+suffix, hero_svg)
-            write('hero-animated-still-'+suffix, hero_svg.replace(MOTION, ''))
+            hero_stem = 'hero-animated-' if light else 'hero-animated-moon-'
+            write(hero_stem+suffix, hero_svg)
+            write(hero_stem+'still-'+suffix, hero_svg.replace(MOTION, ''))
             write('player-profile-'+suffix, profile(p, mobile))
             footer_svg = footer(p, mobile)
             write('footer-animated-'+suffix, footer_svg)

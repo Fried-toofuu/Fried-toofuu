@@ -3,10 +3,10 @@
 <!-- room-time:start -->
 <p align="center">
   <picture>
-    <source media="(prefers-reduced-motion: reduce) and (max-width: 600px)" srcset="assets/hero-animated-still-mobile-dark.svg" />
-    <source media="(prefers-reduced-motion: reduce)" srcset="assets/hero-animated-still-dark.svg" />
-    <source media="(max-width: 600px)" srcset="assets/hero-animated-mobile-dark.svg" />
-    <img src="assets/hero-animated-dark.svg" alt="Tofu's coding corner. Hi, I'm Khanh. Developer in progress at PTIT Hanoi. Night scene selected by Hanoi time." width="100%" />
+    <source media="(prefers-reduced-motion: reduce) and (max-width: 600px)" srcset="assets/hero-animated-moon-still-mobile-dark.svg" />
+    <source media="(prefers-reduced-motion: reduce)" srcset="assets/hero-animated-moon-still-dark.svg" />
+    <source media="(max-width: 600px)" srcset="assets/hero-animated-moon-mobile-dark.svg" />
+    <img src="assets/hero-animated-moon-dark.svg" alt="Tofu's coding corner. Hi, I'm Khanh. Developer in progress at PTIT Hanoi. Night scene selected by Hanoi time." width="100%" />
   </picture>
 </p>
 <!-- room-time:end -->
