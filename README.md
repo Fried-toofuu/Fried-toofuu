@@ -20,7 +20,7 @@
   <img src="assets/inventory-header.svg" alt="My Inventory — a few tools in my backpack" width="100%" />
 </p>
 
-<h3 align="center">🧩 Coding Gear</h3>
+<h3 align="center"> Coding Gear</h3>
 
 <p align="center">
   <img src="https://img.shields.io/badge/C-222831?style=for-the-badge&amp;logo=c&amp;logoColor=F2C078" alt="C" />
@@ -29,7 +29,7 @@
   <img src="https://img.shields.io/badge/Python-222831?style=for-the-badge&amp;logo=python&amp;logoColor=F2C078" alt="Python" />
 </p>
 
-<h3 align="center">🌐 Web &amp; Database</h3>
+<h3 align="center"> Web &amp; Database</h3>
 
 <p align="center">
   <img src="https://img.shields.io/badge/HTML-222831?style=for-the-badge&amp;logo=html5&amp;logoColor=F2C078" alt="HTML" />
@@ -39,14 +39,14 @@
   <img src="https://img.shields.io/badge/PostgreSQL-222831?style=for-the-badge&amp;logo=postgresql&amp;logoColor=F2C078" alt="PostgreSQL" />
 </p>
 
-<h3 align="center">🎨 Creative Gear</h3>
+<h3 align="center"> Creative Gear</h3>
 
 <p align="center">
   <img src="https://img.shields.io/badge/Adobe_Photoshop-222831?style=for-the-badge&amp;logoColor=F2C078" alt="Adobe Photoshop" />
   <img src="https://img.shields.io/badge/Adobe_Premiere_Pro-222831?style=for-the-badge&amp;logoColor=F2C078" alt="Adobe Premiere Pro" />
 </p>
 
-<h3 align="center">🛠️ Everyday Tools</h3>
+<h3 align="center"> Everyday Tools</h3>
 
 <p align="center">
   <img src="https://img.shields.io/badge/Git-222831?style=for-the-badge&amp;logo=git&amp;logoColor=F2C078" alt="Git" />
