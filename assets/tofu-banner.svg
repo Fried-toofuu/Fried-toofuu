@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="280" viewBox="0 0 960 280" role="img" aria-labelledby="title desc">
+  <title id="title">Tofu's coding corner</title>
+  <desc id="desc">A warm pixel tofu at a laptop, with cream lettering and orange accents on a dark background.</desc>
+  <rect width="960" height="280" rx="16" fill="#171b22"/>
+  <g fill="#252c36" shape-rendering="crispEdges">
+    <path d="M40 36h8v8h-8zM64 36h8v8h-8zM88 36h8v8h-8zM896 228h8v8h-8zM920 228h8v8h-8z"/>
+    <path d="M40 220h136v2H40zM816 56h104v2H816z"/>
+  </g>
+  <g font-family="'Courier New',monospace">
+    <text x="64" y="92" fill="#f2c078" font-size="16" letter-spacing="3">FRIED-TOOFUU / HOME</text>
+    <text x="62" y="144" fill="#fff0d5" font-size="38" font-weight="bold">Tofu's coding corner.</text>
+    <text x="64" y="180" fill="#adb6c4" font-size="18">Code, learn, repeat.</text>
+  </g>
+  <g transform="translate(714 58) scale(4)" shape-rendering="crispEdges">
+    <path d="M-4 43h49v2H-4z" fill="#0e1117"/>
+    <path d="M8 4h20v2h4v4h2v16h-2v4H4v-4H2V10h2V6h4z" fill="#d89855"/>
+    <path d="M8 6h20v2h2v4h2v12h-2v4H6v-4H4V12h2V8h2z" fill="#fff0d5"/>
+    <path d="M8 8h18v2H8zM6 12h2v8H6z" fill="#fff9ec"/>
+    <path d="M10 15h2v3h-2zM24 15h2v3h-2zM15 20h6v2h-6z" fill="#392d2a"/>
+    <path d="M7 20h4v2H7zM25 20h4v2h-4z" fill="#eda47d"/>
+    <path d="M-1 28h8v5h-8zM30 28h8v5h-8z" fill="#d89855"/>
+    <path d="M5 27h28v15H5z" fill="#596777"/>
+    <path d="M7 29h24v11H7z" fill="#252c36"/>
+    <path d="m15 32-3 3 3 3h2l-3-3 3-3zm8 0h-2l3 3-3 3h2l3-3z" fill="#f2c078"/>
+    <path d="M2 42h34v2H2z" fill="#8492a3"/>
+    <path d="M40 8h2v6h-2zM38 10h6v2h-6zM-7 18h2v6h-2zM-9 20h6v2h-6z" fill="#f2c078"/>
+  </g>
+</svg>

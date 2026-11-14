@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="96" height="88" viewBox="0 0 96 88" role="img" aria-labelledby="title desc">
+  <title id="title">Tiny tofu break</title>
+  <desc id="desc">A smiling pixel tofu gently bobbing above its shadow.</desc>
+  <style>
+    .tofu { animation: bob 3s ease-in-out infinite; }
+    @keyframes bob { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-4px); } }
+    @media (prefers-reduced-motion: reduce) { .tofu { animation: none; } }
+  </style>
+  <ellipse cx="48" cy="78" rx="24" ry="3" fill="#8492a3" opacity=".25"/>
+  <g class="tofu" shape-rendering="crispEdges">
+    <path d="M28 20h40v4h8v8h4v28h-4v8H20v-8h-4V32h4v-8h8z" fill="#d89855"/>
+    <path d="M28 24h40v4h4v8h4v20h-4v8H24v-8h-4V36h4v-8h4z" fill="#fff0d5"/>
+    <path d="M28 28h36v4H28zM24 36h4v12h-4z" fill="#fff9ec"/>
+    <path d="M32 40h4v6h-4zM60 40h4v6h-4zM42 50h12v4H42z" fill="#392d2a"/>
+    <path d="M26 50h8v4h-8zM62 50h8v4h-8z" fill="#eda47d"/>
+    <path d="M30 68h8v6h-8zM58 68h8v6h-8z" fill="#d89855"/>
+  </g>
+</svg>
