@@ -17,7 +17,7 @@
 </p>
 
 <p align="center">
-  <img src="assets/inventory-header.svg" alt="My Inventory — a few tools in my backpack" width="100%" />
+  <img src="assets/inventory-header.svg" alt="Inventory — a few tools in my backpack" width="100%" />
 </p>
 
 <h3 align="center"> Coding Gear</h3>
