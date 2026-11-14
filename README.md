@@ -17,6 +17,15 @@ PTIT Hanoi · Code, learn, repeat.
 ![Adobe Photoshop](https://img.shields.io/badge/Adobe_Photoshop-222831?style=flat-square&logoColor=F2C078) ![Adobe Premiere Pro](https://img.shields.io/badge/Adobe_Premiere_Pro-222831?style=flat-square&logoColor=F2C078)
 
 <p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/contribution-snake-dark.svg" />
+    <img src="assets/contribution-snake.svg" alt="A cream-colored snake eating my GitHub contributions in warm orange tones" width="100%" />
+  </picture>
+</p>
+
+<!-- Snake images are refreshed daily by .github/workflows/contribution-snake.yml. -->
+
+<p align="center">
   <img src="assets/tofu-idle.svg" alt="A little pixel tofu taking a break" width="96" height="88" />
   <br />
   <sub>one small commit at a time.</sub>
