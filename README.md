@@ -2,31 +2,58 @@
   <img src="assets/tofu-banner.svg" alt="Tofu's coding corner — a pixel tofu coding on a laptop" width="100%" />
 </p>
 
-# Hi, I'm Khanh 👋
+<h1 align="center">Hey, I'm Khanh &#128075;</h1>
 
-PTIT Hanoi · Code, learn, repeat.
+<p align="center">
+  <strong>PTIT Hanoi &middot; Fried-toofuu</strong><br />
+  <sub>Code, learn, repeat.</sub>
+</p>
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-222831?style=flat-square&logo=linkedin&logoColor=F2C078)](https://www.linkedin.com/in/nguy%E1%BB%85n-ho%C3%A0ng-kh%C3%A1nh-undefined-b1a942389/) [![Email](https://img.shields.io/badge/Email-222831?style=flat-square&logo=gmail&logoColor=F2C078)](mailto:nghoangkhanh67@gmail.com)
+<h3 align="center">Let's connect</h3>
+
+<p align="center">
+  <a href="https://www.linkedin.com/in/nguy%E1%BB%85n-ho%C3%A0ng-kh%C3%A1nh-undefined-b1a942389/"><img src="https://img.shields.io/badge/LinkedIn-222831?style=for-the-badge&amp;logo=linkedin&amp;logoColor=F2C078" alt="LinkedIn" /></a>
+  <a href="mailto:nghoangkhanh67@gmail.com"><img src="https://img.shields.io/badge/Email-222831?style=for-the-badge&amp;logo=gmail&amp;logoColor=F2C078" alt="Email" /></a>
+</p>
 
 <p align="center">
   <img src="assets/inventory-header.svg" alt="My Inventory — a few tools in my backpack" width="100%" />
 </p>
 
-### 🧩 Coding Gear
+<h3 align="center">🧩 Coding Gear</h3>
 
-![C](https://img.shields.io/badge/C-222831?style=for-the-badge&logo=c&logoColor=F2C078) ![C++](https://img.shields.io/badge/C%2B%2B-222831?style=for-the-badge&logo=cplusplus&logoColor=F2C078) ![Java](https://img.shields.io/badge/Java-222831?style=for-the-badge&logo=openjdk&logoColor=F2C078) ![Python](https://img.shields.io/badge/Python-222831?style=for-the-badge&logo=python&logoColor=F2C078)
+<p align="center">
+  <img src="https://img.shields.io/badge/C-222831?style=for-the-badge&amp;logo=c&amp;logoColor=F2C078" alt="C" />
+  <img src="https://img.shields.io/badge/C%2B%2B-222831?style=for-the-badge&amp;logo=cplusplus&amp;logoColor=F2C078" alt="C++" />
+  <img src="https://img.shields.io/badge/Java-222831?style=for-the-badge&amp;logo=openjdk&amp;logoColor=F2C078" alt="Java" />
+  <img src="https://img.shields.io/badge/Python-222831?style=for-the-badge&amp;logo=python&amp;logoColor=F2C078" alt="Python" />
+</p>
 
-### 🌐 Web & Database
+<h3 align="center">🌐 Web &amp; Database</h3>
 
-![HTML](https://img.shields.io/badge/HTML-222831?style=for-the-badge&logo=html5&logoColor=F2C078) ![CSS](https://img.shields.io/badge/CSS-222831?style=for-the-badge&logo=css&logoColor=F2C078) ![JavaScript](https://img.shields.io/badge/JavaScript-222831?style=for-the-badge&logo=javascript&logoColor=F2C078) ![MySQL](https://img.shields.io/badge/MySQL-222831?style=for-the-badge&logo=mysql&logoColor=F2C078) ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-222831?style=for-the-badge&logo=postgresql&logoColor=F2C078)
+<p align="center">
+  <img src="https://img.shields.io/badge/HTML-222831?style=for-the-badge&amp;logo=html5&amp;logoColor=F2C078" alt="HTML" />
+  <img src="https://img.shields.io/badge/CSS-222831?style=for-the-badge&amp;logo=css&amp;logoColor=F2C078" alt="CSS" />
+  <img src="https://img.shields.io/badge/JavaScript-222831?style=for-the-badge&amp;logo=javascript&amp;logoColor=F2C078" alt="JavaScript" />
+  <img src="https://img.shields.io/badge/MySQL-222831?style=for-the-badge&amp;logo=mysql&amp;logoColor=F2C078" alt="MySQL" />
+  <img src="https://img.shields.io/badge/PostgreSQL-222831?style=for-the-badge&amp;logo=postgresql&amp;logoColor=F2C078" alt="PostgreSQL" />
+</p>
 
-### 🎨 Creative Gear
+<h3 align="center">🎨 Creative Gear</h3>
 
-![Adobe Photoshop](https://img.shields.io/badge/Adobe_Photoshop-222831?style=for-the-badge&logoColor=F2C078) ![Adobe Premiere Pro](https://img.shields.io/badge/Adobe_Premiere_Pro-222831?style=for-the-badge&logoColor=F2C078)
+<p align="center">
+  <img src="https://img.shields.io/badge/Adobe_Photoshop-222831?style=for-the-badge&amp;logoColor=F2C078" alt="Adobe Photoshop" />
+  <img src="https://img.shields.io/badge/Adobe_Premiere_Pro-222831?style=for-the-badge&amp;logoColor=F2C078" alt="Adobe Premiere Pro" />
+</p>
 
-### 🛠️ Everyday Tools
+<h3 align="center">🛠️ Everyday Tools</h3>
 
-![Git](https://img.shields.io/badge/Git-222831?style=for-the-badge&logo=git&logoColor=F2C078) ![GitHub](https://img.shields.io/badge/GitHub-222831?style=for-the-badge&logo=github&logoColor=F2C078) ![VS Code](https://img.shields.io/badge/VS_Code-222831?style=for-the-badge&logoColor=F2C078) ![Linux](https://img.shields.io/badge/Linux-222831?style=for-the-badge&logo=linux&logoColor=F2C078)
+<p align="center">
+  <img src="https://img.shields.io/badge/Git-222831?style=for-the-badge&amp;logo=git&amp;logoColor=F2C078" alt="Git" />
+  <img src="https://img.shields.io/badge/GitHub-222831?style=for-the-badge&amp;logo=github&amp;logoColor=F2C078" alt="GitHub" />
+  <img src="https://img.shields.io/badge/VS_Code-222831?style=for-the-badge&amp;logoColor=F2C078" alt="VS Code" />
+  <img src="https://img.shields.io/badge/Linux-222831?style=for-the-badge&amp;logo=linux&amp;logoColor=F2C078" alt="Linux" />
+</p>
 
 <p align="center">
   <picture>
