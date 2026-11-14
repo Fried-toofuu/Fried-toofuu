@@ -2,10 +2,10 @@
   <img src="assets/tofu-banner.svg" alt="Tofu's coding corner — a pixel tofu coding on a laptop" width="100%" />
 </p>
 
-<h1 align="center">Hey, I'm Khanh &#128075;</h1>
+<h1 align="center">Hi, I'm Khanh &#128075;</h1>
 
 <p align="center">
-  <strong>PTIT Hanoi &middot; Fried-toofuu</strong><br />
+  <strong>Currently studying at PTIT Hanoi </strong><br />
   <sub>Code, learn, repeat.</sub>
 </p>
 
