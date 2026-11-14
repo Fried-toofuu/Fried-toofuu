@@ -6,7 +6,6 @@
 
 <p align="center">
   <strong>Currently studying at PTIT Hanoi </strong><br />
-  <sub>Code, learn, repeat.</sub>
 </p>
 
 <h3 align="center">Let's connect</h3>
