@@ -96,7 +96,7 @@ def plant(p):
     return '<g class="leaf">'+leaves+'</g>'+rect(8, 44, 28, 4, '#f2c078')+rect(12, 48, 20, 20, '#d89855')
 
 
-def room(p, light=False):
+def room(p, day=False):
     out = rect(0, 0, 560, 340, p['deep']) + rect(8, 8, 544, 268, p['bg'])
     # Wall paneling, pixel floorboards and warm woven rug.
     out += rect(8, 272, 544, 4, p['line']) + rect(8, 276, 544, 56, p['surface'])
@@ -106,8 +106,9 @@ def room(p, light=False):
     for x in range(98, 460, 24):
         out += rect(x, 304, 8, 12, p['second'], opacity='.4')
     # Window: daytime sun / nighttime moon and staggered twinkling stars.
-    out += rect(342, 32, 176, 144, p['line']) + rect(350, 40, 160, 128, p['sky'])
-    if light:
+    sky = '#c9dfde' if day else '#17263a'
+    out += rect(342, 32, 176, 144, p['line']) + rect(350, 40, 160, 128, sky)
+    if day:
         out += rect(454, 58, 28, 28, '#f2c078') + rect(450, 62, 36, 20, '#f2c078')
         out += rect(362, 80, 36, 8, '#fff6e6') + rect(374, 72, 16, 8, '#fff6e6')
         out += '<path d="M350 168h160L380 272H220z" fill="#f2c078" opacity=".07"/>'
@@ -155,7 +156,7 @@ def room(p, light=False):
     return '<g shape-rendering="crispEdges">'+out+'</g>'
 
 
-def hero(p, light=False, mobile=False):
+def hero(p, day=False, mobile=False):
     w, h = (600, 670) if mobile else (1200, 400)
     out = frame(w, h, p)
     x = 36 if mobile else 52
@@ -164,12 +165,12 @@ def hero(p, light=False, mobile=False):
     out += text(x, 158 if mobile else 190, 'Code, learn, repeat.', 23, p['muted'])
     if mobile:
         out += text(x, 205, 'Developer in progress', 20, p['muted']) + text(x, 235, 'PTIT Hanoi', 20, p['muted'])
-        out += group(room(p, light), 20, 298)
+        out += group(room(p, day), 20, 298)
     else:
         out += text(x, 248, 'Developer in progress', 22, p['muted']) + text(x, 280, 'PTIT Hanoi', 22, p['muted'])
-        out += group(room(p, light), 608, 30)
+        out += group(room(p, day), 608, 30)
         out += rect(x, 328, 36, 4, p['second']) + text(x+50, 336, 'a little world, one commit at a time.', 15, p['muted'])
-    return svg(w, h, 'Tofu coding in a cozy daytime room' if light else 'Tofu coding in a cozy nighttime room', out, True)
+    return svg(w, h, 'Tofu coding in a cozy daytime room' if day else 'Tofu coding in a cozy nighttime room', out, True)
 
 
 def profile(p, mobile=False):
@@ -312,10 +313,11 @@ def build():
         light = theme == 'light'
         for mobile in [False, True]:
             suffix = ('mobile-' if mobile else '')+theme+'.svg'
-            hero_svg = hero(p, light, mobile)
-            hero_stem = 'hero-animated-' if light else 'hero-animated-moon-'
-            write(hero_stem+suffix, hero_svg)
-            write(hero_stem+'still-'+suffix, hero_svg.replace(MOTION, ''))
+            for period in ['day', 'night']:
+                hero_svg = hero(p, period == 'day', mobile)
+                hero_stem = 'hero-animated-'+period+'-'
+                write(hero_stem+suffix, hero_svg)
+                write(hero_stem+'still-'+suffix, hero_svg.replace(MOTION, ''))
             write('player-profile-'+suffix, profile(p, mobile))
             footer_svg = footer(p, mobile)
             write('footer-animated-'+suffix, footer_svg)
@@ -330,7 +332,7 @@ def build():
     readme = '<!-- Artwork: python scripts/build-pixel-world.py. Maintenance: docs/profile-maintenance.md. All images are local. -->\n\n'
     def panel(content):
         return '<p align="center">\n  '+content+'\n</p>\n\n'
-    readme += '<!-- room-time:start -->\n'+panel(picture('hero-animated', "Tofu's coding corner. Hi, I'm Khanh. Developer in progress at PTIT Hanoi.")).rstrip()+'\n<!-- room-time:end -->\n\n'
+    readme += '<!-- room-time:start -->\n<!-- Selected by scripts/update-room-time.py. -->\n<!-- room-time:end -->\n\n'
     readme += panel(picture('player-profile', 'Player profile: Khanh; Developer in Progress; Hanoi, Vietnam; PTIT Hanoi; Code, learn, repeat.'))
     readme += panel(picture('inventory-header', 'Inventory — a few tools in my backpack.'))
     for pair in [INVENTORY[:2], INVENTORY[2:]]:

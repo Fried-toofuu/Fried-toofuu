@@ -28,9 +28,18 @@ class RoomTimeTests(unittest.TestCase):
         self.assertEqual(period, 'day')
         self.assertTrue(after.startswith('prefix\n'+ROOM['START']))
         self.assertTrue(after.endswith(ROOM['END']+'\nplayer, inventory, snake, footer'))
-        self.assertNotIn('prefers-color-scheme', after)
+        self.assertIn('prefers-color-scheme', after)
         self.assertIn('prefers-reduced-motion', after)
         self.assertEqual(ROOM['update_readme'](after, now)[0], after)
+
+    def test_each_period_offers_both_themes_and_motion_sizes(self):
+        for period in ['day', 'night']:
+            markup = ROOM['hero_markup'](period)
+            other = 'night' if period == 'day' else 'day'
+            self.assertNotIn('hero-animated-'+other+'-', markup)
+            for theme in ['light', 'dark']:
+                for variant in ['', 'mobile-', 'still-', 'still-mobile-']:
+                    self.assertIn(f'assets/hero-animated-{period}-{variant}{theme}.svg', markup)
 
     def test_missing_markers_and_naive_time_fail(self):
         with self.assertRaises(ValueError):

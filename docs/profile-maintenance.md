@@ -7,8 +7,11 @@ is required. Python 3.10+ is sufficient for the generation scripts.
 ## Room clock
 
 The hero selects daytime from 06:00 inclusive until 18:00 exclusive in Hanoi
-(UTC+7), and nighttime otherwise. Other panels use the viewer's light/dark
-preference. Reduced-motion viewers receive static variants.
+(UTC+7), and nighttime otherwise. This selects the sky, sun/moon and sunlight,
+independently of the UI palette. The hero and every other panel follow the viewer's
+light/dark preference: daytime can have a dark room UI, and nighttime can have a
+light room UI. All four combinations include desktop/mobile and static variants.
+Reduced-motion viewers receive static variants.
 
 [room-time.yml](../.github/workflows/room-time.yml) schedules synchronization and
 supports manual runs. Actions can start late, and an open page needs reloading;

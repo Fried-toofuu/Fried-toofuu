@@ -19,14 +19,17 @@ def room_period(now):
 def hero_markup(period):
     if period not in ('day', 'night'):
         raise ValueError('Expected day or night')
-    theme = 'light' if period == 'day' else 'dark'
-    stem = 'hero-animated' if period == 'day' else 'hero-animated-moon'
+    stem = 'hero-animated-'+period
     return f'''<p align="center">
   <picture>
-    <source media="(prefers-reduced-motion: reduce) and (max-width: 600px)" srcset="assets/{stem}-still-mobile-{theme}.svg" />
-    <source media="(prefers-reduced-motion: reduce)" srcset="assets/{stem}-still-{theme}.svg" />
-    <source media="(max-width: 600px)" srcset="assets/{stem}-mobile-{theme}.svg" />
-    <img src="assets/{stem}-{theme}.svg" alt="Tofu's coding corner. Hi, I'm Khanh. Developer in progress at PTIT Hanoi. {period.capitalize()} scene selected by Hanoi time." width="100%" />
+    <source media="(prefers-reduced-motion: reduce) and (max-width: 600px) and (prefers-color-scheme: dark)" srcset="assets/{stem}-still-mobile-dark.svg" />
+    <source media="(prefers-reduced-motion: reduce) and (max-width: 600px)" srcset="assets/{stem}-still-mobile-light.svg" />
+    <source media="(prefers-reduced-motion: reduce) and (prefers-color-scheme: dark)" srcset="assets/{stem}-still-dark.svg" />
+    <source media="(prefers-reduced-motion: reduce)" srcset="assets/{stem}-still-light.svg" />
+    <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="assets/{stem}-mobile-dark.svg" />
+    <source media="(max-width: 600px)" srcset="assets/{stem}-mobile-light.svg" />
+    <source media="(prefers-color-scheme: dark)" srcset="assets/{stem}-dark.svg" />
+    <img src="assets/{stem}-light.svg" alt="Tofu's coding corner. Hi, I'm Khanh. Developer in progress at PTIT Hanoi. {period.capitalize()} scene selected by Hanoi time; colors follow viewer theme." width="100%" />
   </picture>
 </p>'''
 
