@@ -3,14 +3,14 @@
 <!-- room-time:start -->
 <p align="center">
   <picture>
-    <source media="(prefers-reduced-motion: reduce) and (max-width: 600px) and (prefers-color-scheme: dark)" srcset="assets/hero-animated-day-still-mobile-dark.svg" />
-    <source media="(prefers-reduced-motion: reduce) and (max-width: 600px)" srcset="assets/hero-animated-day-still-mobile-light.svg" />
-    <source media="(prefers-reduced-motion: reduce) and (prefers-color-scheme: dark)" srcset="assets/hero-animated-day-still-dark.svg" />
-    <source media="(prefers-reduced-motion: reduce)" srcset="assets/hero-animated-day-still-light.svg" />
-    <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="assets/hero-animated-day-mobile-dark.svg" />
-    <source media="(max-width: 600px)" srcset="assets/hero-animated-day-mobile-light.svg" />
-    <source media="(prefers-color-scheme: dark)" srcset="assets/hero-animated-day-dark.svg" />
-    <img src="assets/hero-animated-day-light.svg" alt="Tofu's coding corner. Hi, I'm Khanh. Developer in progress at PTIT Hanoi. Day scene selected by Hanoi time; colors follow viewer theme." width="100%" />
+    <source media="(prefers-reduced-motion: reduce) and (max-width: 600px) and (prefers-color-scheme: dark)" srcset="assets/hero-animated-night-still-mobile-dark.svg" />
+    <source media="(prefers-reduced-motion: reduce) and (max-width: 600px)" srcset="assets/hero-animated-night-still-mobile-light.svg" />
+    <source media="(prefers-reduced-motion: reduce) and (prefers-color-scheme: dark)" srcset="assets/hero-animated-night-still-dark.svg" />
+    <source media="(prefers-reduced-motion: reduce)" srcset="assets/hero-animated-night-still-light.svg" />
+    <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="assets/hero-animated-night-mobile-dark.svg" />
+    <source media="(max-width: 600px)" srcset="assets/hero-animated-night-mobile-light.svg" />
+    <source media="(prefers-color-scheme: dark)" srcset="assets/hero-animated-night-dark.svg" />
+    <img src="assets/hero-animated-night-light.svg" alt="Tofu's coding corner. Hi, I'm Khanh. Developer in progress at PTIT Hanoi. Night scene selected by Hanoi time; colors follow viewer theme." width="100%" />
   </picture>
 </p>
 <!-- room-time:end -->
